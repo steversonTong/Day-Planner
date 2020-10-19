@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p> <br><br>
+      <h4>Live Clock:</h4>
+      <div id="clock"></div>
+    </header>
+    <div class="container">
+      <table class="table" id="calendar">
+        <col style="width:5%">
+        <col style="width:50%">
+        <col style="width:10%">
+        <thead>
+          <tr>
+            <th>Hour</th>
+            <th>Appointment/Meeting</th>
+            <th>Save</th>
+          </tr>
+          <tr>
+            <td class="plan-day" >9am</td>
+            <td class="appt"><textarea name="" class="" cols="50" rows="1"></textarea></td>
+            <td class="display-plan"></td>
+            <td><button class="savebtn">Save Appointment</button></td>
+          </tr><tr>
+            <td class="plan-day" >10am</td>
+            <td class="appt"><textarea name="" class="" cols="50" rows="1"></textarea></td>
+            <td class="display-plan"></td>
+            <td><button class="savebtn">Save Appointment</button></td>
+          </tr><tr>
+            <td class="plan-day" onclick="";>11am</td>
+            <td class="appt"><textarea name="" class="" cols="50" rows="1"></textarea></td>
+            <td class="display-plan"></td>
+            <td><button class="savebtn">Save Appointment</button></td>
+          </tr><tr>
+            <td class="plan-day" onclick="";>12pm</td>
+            <td class="appt"><textarea name="" class="" cols="50" rows="1"></textarea></td>
+            <td class="display-plan"></td>
+            <td><button class="savebtn">Save Appointment</button></td>
+          </tr><tr>
+            <td class="plan-day" onclick="";>1pm</td>
+            <td class="appt"><textarea name="" class="" cols="50" rows="1"></textarea></td>
+            <td class="display-plan"></td>
+            <td><button class="savebtn">Save Appointment</button></td>
+          </tr><tr>
+            <td class="plan-day" onclick="";>2pm</td>
+            <td class="appt"><textarea name="" class="" cols="50" rows="1"></textarea></td>
+            <td class="display-plan"></td>
+            <td><button class="savebtn">Save Appointment</button></td>
+          </tr><tr>
+            <td class="plan-day" onclick="";>3pm</td>
+            <td class="appt"><textarea name="" class="" cols="50" rows="1"></textarea></td>
+            <td class="display-plan"></td>
+            <td><button class="savebtn">Save Appointment</button></td>
+          </tr><tr>
+            <td class="plan-day" onclick="";>4pm</td>
+            <td class="appt"><textarea name="" class="" cols="50" rows="1"></textarea></td>
+            <td class="display-plan"></td>
+            <td><button class="savebtn">Save Appointment</button></td>
+          </tr>
+          <tr>
+            <td class="plan-day" onclick="";>5pm</td>
+            <td class="appt"><textarea name="" class="" cols="50" rows="1"></textarea></td>
+            <td class="display-plan"></td>
+            <td><button class="savebtn">Save Appointment</button></td>
+          </tr>
+        </thead>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
