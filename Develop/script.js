@@ -25,13 +25,24 @@ function currentTime() {
   currentTime();
 
   $(document).ready(function(){
-      var $display = $(".display-plan")
 
-    $(".saveBtn").on("click", function () {
-        localStorage.setItem("plan-day", $display.val());
-      });
 
-$(".display-plan").text(localStorage.getItem("plan-day"));
+    $(".saveBtn").on("click", function (event) {
+        event.preventDefault();
+
+        var planInput = document.querySelector(".appt").val();
+
+        if (planInput === "") {
+            alert("You didn't input anything for this time");
+        }
+        else {
+            alert("Your plan is saved!");
+            
+            localStorage.setItem("appt", planInput);
+            $(".display-plan").prepend(planInput);
+        }
+    });
+
 })
 
 
